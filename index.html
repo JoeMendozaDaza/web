@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio | Tu Nombre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <nav class="menu">
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#formacion">Formación</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <h1>Tu Nombre</h1>
+      <p>Estudiante de Desarrollo Frontend</p>
+    </header>
+    <main>
+      <section class="tarjeta" id="sobre-mi">
+        <img src="img/foto.jpg" alt="Mi foto" class="foto" />
+        <h2>Sobre mí</h2>
+        <p>Breve presentación personal.</p>
+        <a href="#contacto" class="boton">Contáctame</a>
+        <a href="#proyectos" class="boton boton-secundario">Ver proyectos</a>
+      </section>
+
+      <section class="tarjeta" id="habilidades">
+        <h2>Habilidades</h2>
+        <ul class="lista-habilidades">
+          <li>HTML5 semántico</li>
+          <li>CSS3 y diseño de interfaces</li>
+          <li>Trabajo en equipo</li>
+          <li>Comunicación efectiva</li>
+        </ul>
+      </section>
+
+      <section class="tarjeta" id="formacion">
+        <h2>Formación</h2>
+        <table class="tabla">
+          <caption>
+            Estudios y cursos
+          </caption>
+          <thead>
+            <tr>
+              <th>Año</th>
+              <th>Estudio</th>
+              <th>Institución</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2026</td>
+              <td>Desarrollo web</td>
+              <td>Instituto</td>
+            </tr>
+            <tr>
+              <td>2025</td>
+              <td>Ofimática</td>
+              <td>Academia</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="tarjeta" id="servicios">
+        <h2>Lo que puedo hacer</h2>
+        <div class="fila">
+          <article class="mini-tarjeta">
+            <h3>Páginas web</h3>
+            <p>Sitios informativos claros y ordenados.</p>
+          </article>
+          <article class="mini-tarjeta">
+            <h3>Diseño adaptable</h3>
+            <p>Páginas que se ven bien en el celular.</p>
+          </article>
+          <article class="mini-tarjeta">
+            <h3>Mantenimiento</h3>
+            <p>Actualización de textos e imágenes.</p>
+          </article>
+        </div>
+      </section>
+      
+      <section class="tarjeta" id="contacto">
+        <h2>Contacto</h2>
+        <form class="formulario">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" required />
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+          <button type="submit" class="boton">Enviar</button>
+        </form>
+      </section>
+
+      
+    </main>
+    <footer class="pie">
+      <p>&copy; 2026 Tu Nombre</p>
+    </footer>
+  </body>
+</html>
